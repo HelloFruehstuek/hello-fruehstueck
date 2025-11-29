@@ -28,33 +28,32 @@
     }
 
     .nav {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1.5rem 1.5rem; /* Höhe verdoppelt */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
     .logo {
-  display: flex;
-  align-items: center; /* richtet Logo + Text vertikal sauber aus */
-  gap: 0.75rem;        /* etwas größerer Abstand */
-  font-weight: 800;
-  font-size: 1.45rem;  /* etwas größer als vorher */
-  letter-spacing: 0.03em;
-}
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 800;
+      font-size: 1.45rem;
+      letter-spacing: 0.03em;
+    }
 
+    .logo-image {
+      height: 60px;
+      width: auto;
+      display: block;
+    }
 
-.logo-image {
-  height: 60px; /* oder 70px – je nach Geschmack */
-  width: auto;
-  display: block;
-}
-
-.logo-highlight {
-  color: #f59e0b;
-}
+    .logo-highlight {
+      color: #f59e0b;
+    }
 
     .nav-links a {
       margin-left: 1rem;
@@ -303,257 +302,4 @@
       width: 100%;
       padding: 0.7rem 0.8rem;
       border-radius: 10px;
-      border: 1px solid #e5e7eb;
-      font-size: 0.9rem;
-    }
-
-    textarea {
-      min-height: 110px;
-      resize: vertical;
-    }
-
-    footer {
-      border-top: 1px solid #f2e4cc;
-      padding: 1.5rem;
-      font-size: 0.8rem;
-      color: #777;
-      text-align: center;
-      background: #fffbeb;
-    }
-
-    .footer-links a {
-      margin: 0 0.5rem;
-      color: #777;
-      text-decoration: none;
-    }
-
-    .footer-links a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 800px) {
-      .hero {
-        grid-template-columns: 1fr;
-      }
-      .hero-image {
-        order: -1;
-      }
-      .nav-links {
-        display: none;
-      }
-      main {
-        padding: 1.25rem;
-      }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="nav">
-      <div class="logo">
-  <img
-    src="img/HelloF_Logo_V1.png"
-    alt="Hello Frühstück Logo"
-    class="logo-image"
-  />
-  <span>Hello <span class="logo-highlight">Frühstück</span></span>
-   </div>
-
-      <div class="nav-links">
-        <a href="#about">Über uns</a>
-        <a href="#products">Angebot</a>
-        <a href="#how-it-works">So funktioniert’s</a>
-        <a href="#contact">Kontakt</a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-text">
-        <div class="hero-tagline">Dein guter Morgen</div>
-        <h1>Hello Frühstück – starte leicht, starte lecker.</h1>
-        <p>
-          Frische Frühstücks-Bowls, knusprige Granolas und liebevoll gepackte Frühstücksboxen.
-          Direkt zu dir nach Hause oder ins Büro – ready, wenn du es bist.
-        </p>
-        <a href="#products" class="btn-primary">Jetzt entdecken</a>
-
-        <div class="hero-badges">
-          <div class="badge">🌱 Frische Zutaten</div>
-          <div class="badge">⏱️ Schnell & unkompliziert</div>
-          <div class="badge">💛 Perfekt für jeden Morgen</div>
-        </div>
-      </div>
-
-      <div class="hero-image">
-        <div class="hero-plate">
-          <h2>Good Morning Bowl</h2>
-          <p>Cremiger Joghurt, hausgemachtes Granola, frische Früchte.</p>
-          <p><strong>Ab 5,90 €</strong></p>
-          <p style="font-size:0.8rem; margin-top:0.4rem;">
-            Bestellbar Mo–Fr · Lieferung am Morgen*
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <span class="tag">Über Hello Frühstück</span>
-      <h2>Guter Morgen, gutes Gefühl.</h2>
-      <p class="section-intro">
-        Wir glauben, dass ein entspanntes Frühstück den Ton für deinen Tag setzt.
-        Deshalb kombinieren wir frische Zutaten mit cleveren Rezepten – für Frühstück,
-        das du liebst, ohne Stress in der Küche.
-      </p>
-
-      <div class="features">
-        <div class="card">
-          <h3>Frisch & ausgewogen</h3>
-          <p>Wir setzen auf hochwertige Zutaten und ausgewogene Rezepturen, die satt machen – nicht müde.</p>
-        </div>
-        <div class="card">
-          <h3>Ready, wenn du es bist</h3>
-          <p>Vorbestellen, zurücklehnen, genießen: Dein Frühstück wartet auf dich, nicht umgekehrt.</p>
-        </div>
-        <div class="card">
-          <h3>Für dich & dein Team</h3>
-          <p>Ob zuhause, im Büro oder fürs Meeting – wir haben passende Frühstücksboxen für jede Situation.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="products">
-      <span class="tag">Unser Angebot</span>
-      <h2>Was du bei Hello Frühstück bekommst.</h2>
-      <p class="section-intro">
-        Wähle deine Lieblingskreationen oder stelle dir deine eigene Frühstücksbox zusammen.
-        Ideal für jeden Tag – und alle, die morgens wenig Zeit, aber große Lust auf Genuss haben.
-      </p>
-
-      <div class="features">
-        <div class="card">
-          <h3>Good Morning Bowl</h3>
-          <p>Cremiger Joghurt, hausgemachtes Granola, saisonale Früchte. Der Klassiker für einen starken Start in den Tag.</p>
-          <p style="margin-top:0.5rem; font-size:0.85rem;"><strong>Ab 5,90 €</strong></p>
-        </div>
-        <div class="card">
-          <h3>Overnight Oats To-Go</h3>
-          <p>Haferflocken, Chia, pflanzliche Milch und wechselnde Toppings – einfach aus dem Kühlschrank greifen und los.</p>
-          <p style="margin-top:0.5rem; font-size:0.85rem;"><strong>Ab 4,90 €</strong></p>
-        </div>
-        <div class="card">
-          <h3>Office Frühstücksbox</h3>
-          <p>Ideal fürs Team: Brötchen, Aufstriche, Obst & Sweet Treats – fix und fertig fürs Meeting oder den Office-Brunch.</p>
-          <p style="margin-top:0.5rem; font-size:0.85rem;"><strong>Ab 39,00 €</strong> (für 4 Personen)</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="how-it-works">
-      <span class="tag">So funktioniert’s</span>
-      <h2>In drei Schritten zu deinem Frühstück.</h2>
-      <p class="section-intro">
-        Du entscheidest, wie dein Morgen aussieht – wir übernehmen den Rest.
-      </p>
-
-      <div class="steps">
-        <div class="step">
-          <h3>1. Wählen</h3>
-          <p>Such dir deine Lieblingsprodukte oder Boxen aus unserem Sortiment aus.</p>
-        </div>
-        <div class="step">
-          <h3>2. Bestellen</h3>
-          <p>Bestelle bequem online – einmalig oder als regelmäßige Lieferung.</p>
-        </div>
-        <div class="step">
-          <h3>3. Genießen</h3>
-          <p>Dein Frühstück kommt rechtzeitig zu dir. Auspacken, hinsetzen, guten Morgen!</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <span class="tag">Stimmen</span>
-      <h2>Was unsere Kund:innen sagen.</h2>
-      <p class="section-intro">
-        Noch kein Hello Frühstück probiert? Hier ein paar Eindrücke von Menschen, die ihren Morgen schon geupgradet haben.
-      </p>
-
-      <div class="testimonials">
-        <div class="quote">
-          „Perfekt für stressige Homeoffice-Tage – ich muss nicht nachdenken und frühstücke endlich wieder richtig.“
-          <strong>– Laura, Freelancerin</strong>
-        </div>
-        <div class="quote">
-          „Wir nutzen die Frühstücksboxen für Teammeetings. Super simpel, alle happy – und es sieht auch noch mega aus.“
-          <strong>– Jonas, Teamlead Marketing</strong>
-        </div>
-        <div class="quote">
-          „Die Overnight Oats sind mein Go-To für den Weg zur Uni. Schnell, lecker, kein schlechtes Gewissen.“
-          <strong>– Amir, Student</strong>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <span class="tag">Kontakt</span>
-      <h2>Lass uns deinen Morgen planen.</h2>
-      <p class="section-intro">
-        Du möchtest bestellen, mit uns für dein Büro zusammenarbeiten oder hast Fragen zur Marke Hello Frühstück?
-        Schreib uns – wir melden uns so schnell wie möglich.
-      </p>
-
-      <div class="contact-grid">
-        <div>
-          <form>
-            <div>
-              <label for="name">Name</label>
-              <input id="name" type="text" placeholder="Dein Name" />
-            </div>
-            <div>
-              <label for="email">E-Mail</label>
-              <input id="email" type="email" placeholder="dein.name@example.com" />
-            </div>
-            <div>
-              <label for="message">Nachricht</label>
-              <textarea id="message" placeholder="Wobei dürfen wir dir helfen?"></textarea>
-            </div>
-            <button type="submit" class="btn-primary">Nachricht senden</button>
-          </form>
-        </div>
-
-        <div>
-          <div class="card">
-            <h3>Direkter Kontakt</h3>
-            <p style="font-size:0.9rem; margin-top:0.4rem;">
-              E-Mail: <strong>hallo@hello-fruehstueck.de</strong><br />
-              Telefon: <strong>+49 (0) 123 456 789</strong>
-            </p>
-            <p style="font-size:0.85rem; margin-top:0.8rem;">
-              Folge uns auf Social Media für neue Produkte, Angebote & Frühstücksinspiration:
-            </p>
-            <p style="font-size:0.85rem; margin-top:0.4rem;">
-              Instagram · TikTok · LinkedIn
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-links">
-      <a href="#">Impressum</a> ·
-      <a href="#">Datenschutz</a>
-    </div>
-    <div style="margin-top:0.4rem;">
-      © <span id="year"></span> Hello Frühstück. Alle Rechte vorbehalten.
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+      bo
